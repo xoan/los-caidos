@@ -6,6 +6,23 @@ Copyright Edition (C) 2011 Xoan Sampaiño
 
 Permission is granted to copy, publish and/or distribute this work freely and/or derivative works of this work, in whole or in part, by any means and any nonprofit purpose, provided this notice is preserved.
 
+Dependencies
+------------
+
+* babel
+* titling
+* palatino
+* textcomp
+* graphicx
+* microtype
+* hyperref, hyperxmp
+* eso-pic
+* geometry
+* crop
+* fancyhdr
+* titlesec
+* appendix
+
 Generating PDF Files
 --------------------
 
