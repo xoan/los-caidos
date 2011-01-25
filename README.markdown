@@ -6,6 +6,8 @@ Copyright Edition (C) 2011 Xoan Sampaiño
 
 Permission is granted to copy, publish and/or distribute this work freely and/or derivative works of this work, in whole or in part, by any means and any nonprofit purpose, provided this notice is preserved.
 
+(Original text)[http://ngc3660.es/index.php?option=com_content&view=article&id=2006:magnus-dagon&catid=35:colaboradores&Itemid=159]
+
 Dependencies
 ------------
 
