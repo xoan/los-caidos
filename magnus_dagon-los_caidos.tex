@@ -1,0 +1,109 @@
+\documentclass[11pt,a5paper]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[spanish]{babel}
+\addto{\captionsspanish}{
+	\renewcommand{\contentsname}{Índice}
+	\renewcommand{\chaptername}{}
+	\renewcommand{\appendixname}{Anual}
+}
+
+\usepackage{titling}
+\pretitle{\begin{center}\Huge\bfseries}
+\title{Los Caídos}
+\author{Magnus Dagon}
+\date{}
+
+\usepackage{palatino}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\newcommand{\copyleft}{\reflectbox{\copyright}}
+\usepackage[activate={true,nocompatibility},final]{microtype}
+
+\usepackage{hyperref,hyperxmp}
+\hypersetup{
+    pdftitle={\thetitle},
+    pdfauthor={\theauthor},
+    pdfcopyright={Copyright \copyright{} 2010 Magnus Dagon\012%
+        Copyright de la edición \copyright{} 2011 Xoan Sampaiño\012\012%
+        Se otorga el permiso para copiar, publicar y/o distribuir libremente esta obra y/u obras derivadas de esta obra, ya sea total o parcialmente, por cualquier medio y con cualquier propósito sin ánimo de lucro, siempre y cuando esta nota se mantenga.
+    },
+    pdflicenseurl={http://creativecommons.org/licenses/by-nc-sa/3.0/es/},
+}
+
+\usepackage{eso-pic}
+\usepackage[margin=1.5cm,inner=2cm,includehead]{geometry}
+\usepackage[a4,cam,center]{crop}
+\usepackage{fancyhdr}
+\lhead[\fancyplain{}{\thepage}]{\fancyplain{}{\thetitle}}
+\rhead[\fancyplain{}{\nouppercase\leftmark}]{\fancyplain{}{\thepage}}
+\cfoot{}
+\pagestyle{fancyplain}
+\usepackage[compact,clearempty]{titlesec}
+\usepackage[titletoc]{appendix}
+
+\newenvironment{prev}
+    {\begin{quotation}\begin{em}\noindent\ignorespaces}
+    {\end{em}\end{quotation}\nopagebreak\centerline{$\ast \ast \ast$}\vspace{\baselineskip}}
+\newenvironment{next}
+    {\vspace{\baselineskip}\centerline{$\ast \ast \ast$}\nopagebreak\begin{quotation}\begin{em}\noindent\ignorespaces}
+    {\end{em}\end{quotation}}
+
+\sloppy
+
+\begin{document}
+\input{pages/cover}
+
+\frontmatter
+\maketitle
+
+\thispagestyle{empty}
+\input{pages/copyright}
+
+\tableofcontents
+
+\mainmatter
+\chapter{El fin}\label{chapter:el_fin}
+\input{chapters/001-el_fin}
+
+\chapter{El principio}\label{chapter:el_principio}
+\input{chapters/002-el_principio}
+
+\chapter{Aprendizaje}\label{chapter:aprendizaje}
+\input{chapters/003-aprendizaje}
+
+\chapter{Surgimiento}\label{chapter:surgimiento}
+\input{chapters/004-surgimiento}
+
+\chapter{Confrontación}\label{chapter:confrontacion}
+\input{chapters/005-confrontacion}
+
+\chapter{Regreso}\label{chapter:regreso}
+\input{chapters/006-regreso}
+
+\chapter{Conflicto}\label{chapter:conflicto}
+\input{chapters/007-conflicto}
+
+\chapter{Presión}\label{chapter:presion}
+\input{chapters/008-presion}
+
+\chapter{Clandestinidad}\label{chapter:clandestinidad}
+\input{chapters/009-clandestinidad}
+
+\chapter{Depredador}\label{chapter:depredador}
+\input{chapters/010-depredador}
+
+\chapter{Persecución}\label{chapter:persecucion}
+\input{chapters/011-persecucion}
+
+\chapter{Diagnóstico}\label{chapter:diagnostico}
+\input{chapters/012-diagnostico}
+
+\begin{appendices}
+\renewcommand{\thechapter}{\arabic{chapter}}
+\chapter{Crossover}\label{appendix:crossover}
+\input{chapters/anual-001-crossover}
+\end{appendices}
+\end{document}
