@@ -9,7 +9,7 @@ Permission is granted to copy, publish and/or distribute this work freely and/or
 Original text
 -------------
 
-http://ngc3660.es/index.php?option=com_content&view=article&id=2006:magnus-dagon&catid=35:colaboradores&Itemid=159
+<http://ngc3660.es/index.php?option=com_content&view=article&id=2006:magnus-dagon&catid=35:colaboradores&Itemid=159>
 
 Dependencies
 ------------
