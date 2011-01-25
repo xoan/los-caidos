@@ -1,5 +1,5 @@
 (PDF LaTeX Edition of) Los Caídos, a book by Magnus Dagon
----------------------------------------------------------
+=========================================================
 
 Copyright (C) 2010 Magnus Dagon
 Copyright Edition (C) 2011 Xoan Sampaiño
@@ -28,4 +28,4 @@ Generating PDF Files
 
 (Run twice in order to generate and include TOC)
 
-$ pdflatex magnus_dagon-los_caidos.tex
+    $ pdflatex magnus_dagon-los_caidos.tex
