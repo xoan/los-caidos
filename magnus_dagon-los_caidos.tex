@@ -44,11 +44,12 @@
 \usepackage[compact,clearempty]{titlesec}
 \usepackage[titletoc]{appendix}
 
+\newcommand{\separator}{\centerline{$*\quad*\quad*$}}
 \newenvironment{prev}
     {\begin{quotation}\begin{em}\noindent\ignorespaces}
-    {\end{em}\end{quotation}\nopagebreak\centerline{$\ast \ast \ast$}\vspace{\baselineskip}}
+    {\end{em}\end{quotation}\nopagebreak\separator\vspace{\baselineskip}}
 \newenvironment{next}
-    {\vspace{\baselineskip}\centerline{$\ast \ast \ast$}\nopagebreak\begin{quotation}\begin{em}\noindent\ignorespaces}
+    {\vspace{\baselineskip}\separator\nopagebreak\begin{quotation}\begin{em}\noindent\ignorespaces}
     {\end{em}\end{quotation}}
 
 \sloppy
