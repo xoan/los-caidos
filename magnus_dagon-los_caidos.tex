@@ -41,6 +41,9 @@
 \rhead[\fancyplain{}{\footnotesize\nouppercase\leftmark}]{\fancyplain{}{\footnotesize\thepage}}
 \cfoot{}
 \pagestyle{fancyplain}
+%\usepackage{multicol}
+%\setlength{\columnsep}{0.75cm}
+%\setlength{\columnseprule}{\headrulewidth}
 \usepackage[compact,raggedright,clearempty]{titlesec}
 \usepackage[titletoc]{appendix}
 
@@ -63,6 +66,7 @@
 \thispagestyle{empty}
 \input{pages/copyright}
 
+%\addtocontents{toc}{\protect\begin{multicols*}{2}}
 \tableofcontents
 
 \mainmatter
@@ -107,4 +111,5 @@
 \chapter{Crossover}\label{appendix:crossover}
 \input{chapters/anual-001-crossover}
 \end{appendices}
+%\addtocontents{toc}{\protect\end{multicols*}}
 \end{document}
