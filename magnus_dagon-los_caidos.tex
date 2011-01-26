@@ -42,10 +42,30 @@
 \rhead[\fancyplain{}{\footnotesize\thetitle}]{\fancyplain{}{\thepage}}
 \cfoot{}
 \pagestyle{fancyplain}
-%\usepackage{multicol}
-%\setlength{\columnsep}{1cm}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
 \usepackage[compact,raggedright,clearempty]{titlesec}
 \usepackage[titletoc]{appendix}
+
+\makeatletter
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\normalfont\leaders\hbox{$\m@th
+        \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+        mu$}\hfill\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+\makeatother
 
 \newcommand{\separator}{\centerline{$\ast\quad\ast\quad\ast$}}
 \newenvironment{prev}
@@ -66,7 +86,7 @@
 \thispagestyle{empty}
 \input{pages/copyright}
 
-%\addtocontents{toc}{\protect\begin{multicols*}{2}}
+\addtocontents{toc}{\protect\begin{multicols*}{2}}
 \tableofcontents
 
 \mainmatter
@@ -111,5 +131,5 @@
 \chapter{Crossover}\label{appendix:crossover}
 \input{chapters/anual-001-crossover}
 \end{appendices}
-%\addtocontents{toc}{\protect\end{multicols*}}
+\addtocontents{toc}{\protect\end{multicols*}}
 \end{document}
