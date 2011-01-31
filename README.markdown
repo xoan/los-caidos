@@ -16,7 +16,6 @@ Dependencies
 ------------
 
 * babel
-* titling
 * palatino
 * textcomp
 * graphicx
