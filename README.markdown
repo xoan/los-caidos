@@ -2,8 +2,8 @@
 =========================================================
 
 Copyright (C) 2010 Magnus Dagon  
-Copyright Artwork (C) 2010 Pablo Vaquero  
 Copyright Edition (C) 2011 Xoan Sampaiño
+Copyright Artwork (C) 2010 Pablo Vaquero  
 
 Permission is granted to copy, publish and/or distribute this work freely and/or derivative works of this work, in whole or in part, by any means and any nonprofit purpose, provided this notice is preserved.
 
