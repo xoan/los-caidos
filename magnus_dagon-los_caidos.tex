@@ -15,7 +15,7 @@
 \newcommand{\theeditor}{Xoan Sampaiño}
 \newcommand{\theeditorial}{\setlength{\fboxrule}{1pt}\fbox{\textbf{XS}}}
 
-\title{\Huge\textbf{\thetitle}}
+\title{\textbf{\Huge\thetitle}}
 \author{\textit{\theauthor}}
 \date{}
 
@@ -53,23 +53,25 @@
 \usepackage[titletoc]{appendix}
 
 \makeatletter
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill\kern\z@}
+
 \renewcommand*\l@chapter[2]{%
-  \ifnum \c@tocdepth >\m@ne
-    \addpenalty{-\@highpenalty}%
-    \vskip 1.0em \@plus\p@
-    \setlength\@tempdima{1.5em}%
-    \begingroup
-      \parindent \z@ \rightskip \@pnumwidth
-      \parfillskip -\@pnumwidth
-      \leavevmode \bfseries
-      \advance\leftskip\@tempdima
-      \hskip -\leftskip
-      #1\nobreak\normalfont\leaders\hbox{$\m@th
-        \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
-        mu$}\hfill\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
-      \penalty\@highpenalty
-    \endgroup
-  \fi
+    \ifnum \c@tocdepth >\m@ne
+        \addpenalty{-\@highpenalty}%
+        \vskip 1.0em \@plus\p@
+        \setlength\@tempdima{1.5em}%
+        \begingroup
+            \parindent \z@ \rightskip \@pnumwidth
+            \parfillskip -\@pnumwidth
+            \leavevmode \bfseries
+            \advance\leftskip\@tempdima
+            \hskip -\leftskip
+            #1\nobreak\normalfont\leaders\hbox{$\m@th
+                \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+                mu$}\hfill\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+            \penalty\@highpenalty
+        \endgroup
+    \fi
 }
 \makeatother
 
