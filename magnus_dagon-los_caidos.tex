@@ -69,7 +69,8 @@
         mu$}\hfill\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
       \penalty\@highpenalty
     \endgroup
-  \fi}
+  \fi
+}
 \makeatother
 
 \newcommand{\separator}{\centerline{$\ast\quad\ast\quad\ast$}}
@@ -91,10 +92,12 @@
 \thispagestyle{empty}
 \input{pages/copyright}
 
-\addtocontents{toc}{\protect\begin{multicols*}{2}}
+\raggedcolumns
 \tableofcontents
+\flushcolumns
 
 \mainmatter
+\addtocontents{toc}{\protect\begin{multicols}{2}}
 \chapter{El fin}\label{chapter:el_fin}
 \input{chapters/001-el_fin}
 
@@ -139,5 +142,5 @@
 
 \chapter{Infiltración (Fase~1)}\label{chapter:infiltracion-fase_1}
 \input{chapters/013-infiltracion_(fase_1)}
-\addtocontents{toc}{\protect\end{multicols*}}
+\addtocontents{toc}{\protect\end{multicols}}
 \end{document}
