@@ -16,7 +16,7 @@ Dependencies
 ------------
 
 * babel
-* palatino
+* mathdesign
 * textcomp
 * graphicx
 * microtype
@@ -31,6 +31,6 @@ Dependencies
 Generating PDF Files
 --------------------
 
-(Run twice in order to generate and include TOC)
-
+    # getnonfreefonts-sys garamond
     $ pdflatex magnus_dagon-los_caidos.tex
+    $ pdflatex !$

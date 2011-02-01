@@ -11,23 +11,24 @@
 }
 
 \newcommand{\thetitle}{Los Caídos}
+\newcommand{\thesubtitle}{Volúmen I}
 \newcommand{\theauthor}{Magnus Dagon}
 \newcommand{\theeditor}{Xoan Sampaiño}
-\newcommand{\theeditorial}{\setlength{\fboxrule}{1pt}\fbox{\textbf{XS}}}
+\newcommand{\theeditorial}{\setlength{\fboxrule}{1pt}\fbox{\textbf{\fontfamily{ppl}\selectfont XS}}}
 
-\title{\textbf{\Huge\thetitle}}
+\title{\textbf{\Huge\thetitle}\\\textsc{\small\thesubtitle}}
 \author{\textit{\theauthor}}
 \date{}
 
-\usepackage{mathpazo}
+\usepackage[urw-garamond]{mathdesign}
 \usepackage{textcomp}
 \usepackage{graphicx}
-\newcommand{\copyleft}{\reflectbox{\copyright}}
+\newcommand{\copyleft}{\reflectbox{\usefont{T1}{ppl}{b}{n}\selectfont\copyright}}
 \usepackage[activate={true,nocompatibility},final]{microtype}
 
 \usepackage{hyperref,hyperxmp}
 \hypersetup{
-    pdftitle={\thetitle},
+    pdftitle={\thetitle. \ \thesubtitle},
     pdfauthor={\theauthor},
     pdfcopyright={Copyleft \copyright{} 2010-2011, \theauthor\012%
         Copyleft \copyright{} 2011, de la edición, \theeditor\012\012%
@@ -44,7 +45,7 @@
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \lhead[\fancyplain{}{\thepage}]{\fancyplain{}{\footnotesize\nouppercase\leftmark}}
-\rhead[\fancyplain{}{\footnotesize\thetitle}]{\fancyplain{}{\thepage}}
+\rhead[\fancyplain{}{\footnotesize\thetitle. \ \thesubtitle}]{\fancyplain{}{\thepage}}
 \cfoot{}
 \pagestyle{fancyplain}
 \usepackage{multicol}
