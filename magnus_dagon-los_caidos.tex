@@ -7,7 +7,7 @@
 \usepackage[spanish]{babel}
 \addto{\captionsspanish}{
 	\renewcommand{\contentsname}{Índice}
-	\renewcommand{\chaptername}{N\textordmasculine}
+	\renewcommand{\chaptername}{}
 	\renewcommand{\appendixname}{Anual}
 }
 
@@ -75,12 +75,12 @@
 }
 \makeatother
 
-\newcommand{\separator}{\centerline{$\ast\quad\ast\quad\ast$}}
+\newcommand{\parbreak}{\bigskip\centerline{$\ast\quad\ast\quad\ast$}\bigskip\noindent}
 \newenvironment{prev}
     {\begin{quotation}\begin{em}\noindent\ignorespaces}
-    {\end{em}\end{quotation}\separator\bigskip}
+    {\end{em}\end{quotation}\vspace{-\baselineskip}\parbreak\vspace{-\baselineskip}}
 \newenvironment{next}
-    {\bigskip\separator\begin{quotation}\begin{em}\noindent\ignorespaces}
+    {\parbreak\vspace{-2\baselineskip}\begin{quotation}\begin{em}\noindent\ignorespaces}
     {\end{em}\end{quotation}}
 
 \begin{document}
