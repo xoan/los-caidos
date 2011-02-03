@@ -33,6 +33,6 @@ Dependencies
 Generating PDF Files
 --------------------
 
-    # getnonfreefonts-sys garamond
+    $ getnonfreefonts garamond
     $ pdflatex magnus_dagon-los_caidos.tex
-    $ pdflatex !$
+    $ pdflatex magnus_dagon-los_caidos.tex
