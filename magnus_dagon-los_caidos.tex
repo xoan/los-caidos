@@ -7,18 +7,21 @@
 \usepackage[spanish]{babel}
 \addto{\captionsspanish}{
 	\renewcommand{\contentsname}{Índice}
+	\renewcommand{\prefacename}{Prólogo}
 	\renewcommand{\chaptername}{}
 	\renewcommand{\appendixname}{Anual}
 }
 
-\newcommand{\thetitle}{Los Caídos}
-\newcommand{\thesubtitle}{Volúmen I}
-\newcommand{\theauthor}{Magnus Dagon}
-\newcommand{\theeditor}{Xoan Sampaiño}
-\newcommand{\theeditorial}{\setlength{\fboxrule}{1pt}\fbox{\textbf{\fontfamily{ppl}\selectfont XS}}}
+\newcommand{\titlename}{Los Caídos}
+\newcommand{\subtitlename}{Volúmen I}
+\newcommand{\authorname}{Magnus Dagon}
+\newcommand{\editorname}{Xoan Sampaiño}
+\newcommand{\editorlogo}{\setlength{\fboxrule}{1pt}\fbox{\textbf{\fontfamily{ppl}\selectfont XS}}}
+\newcommand{\coverauthorname}{Pablo Vaquero}
+\newcommand{\prefaceauthorname}{Jose A.~Carrasco}
 
-\title{\textbf{\Huge\thetitle}\\\textsc{\small\thesubtitle}}
-\author{\textit{\theauthor}}
+\title{\textbf{\Huge\titlename}\\\textsc{\small\subtitlename}}
+\author{\textit{\authorname}}
 \date{}
 
 \usepackage{graphicx}
@@ -27,10 +30,10 @@
 
 \usepackage{hyperref,hyperxmp}
 \hypersetup{
-    pdftitle={\thetitle. \ \thesubtitle},
-    pdfauthor={\theauthor},
-    pdfcopyright={Copyleft \copyright{} 2010-2011, \theauthor\012%
-        Copyleft \copyright{} 2011, de la edición, \theeditor\012\012%
+    pdftitle={\titlename. \ \subtitlename},
+    pdfauthor={\authorname},
+    pdfcopyright={Copyleft \copyright{} 2010-2011, \authorname\012%
+        Copyleft \copyright{} 2011, de la edición, \editorname\012\012%
         Se otorga el permiso para copiar, publicar y/o distribuir libremente esta obra y/u obras derivadas de esta obra, ya sea total o parcialmente, por cualquier medio y con cualquier propósito sin ánimo de lucro, siempre y cuando esta nota se mantenga.
     },
     pdflicenseurl={http://creativecommons.org/licenses/by-nc-sa/3.0/es/},
@@ -44,7 +47,7 @@
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \lhead[\fancyplain{}{\thepage}]{\fancyplain{}{\footnotesize\nouppercase\leftmark}}
-\rhead[\fancyplain{}{\footnotesize\thetitle. \thesubtitle}]{\fancyplain{}{\thepage}}
+\rhead[\fancyplain{}{\footnotesize\titlename. \subtitlename}]{\fancyplain{}{\thepage}}
 \cfoot{}
 \pagestyle{fancyplain}
 \usepackage{multicol}
@@ -63,6 +66,7 @@
 \newcommand{\fancyparbreak}{\bigskip\centerline{$\ast\quad\ast\quad\ast$}\bigskip}
 
 \begin{document}
+\thispagestyle{empty}
 \pagenumbering{alph}
 \input{pages/cover}
 
@@ -77,8 +81,8 @@
 \tableofcontents
 \flushcolumns
 
-\chapter{Prólogo}
-\cftchapterprecis{por Jose A. Carrasco}\par
+\chapter{\prefacename}
+\cftchapterprecis{por \prefaceauthorname}\par
 \input{chapters/000-prologo}
 
 \mainmatter
@@ -123,7 +127,7 @@
 \begin{appendices}
 \renewcommand{\thechapter}{\arabic{chapter}}
 \chapter{Crossover}
-\cftchapterprecistoc{Porque no siempre todo lo importante sucede en el mismo lugar, y no siempre los protagonistas están en el foco de los hechos principales. Hay otras historias, a veces ajenas, que saltan a la primera línea de los acontecimientos, y resultan ser tan cruciales como aquellas en las que uno había enfocado su atención en un primer vistazo\dots}
+\cftchapterprecistoc{Porque no siempre todo lo importante sucede en el mismo lugar, y no siempre los protagonistas están en el foco de los hechos principales.}
 \input{chapters/anual-001-crossover}
 \end{appendices}
 
