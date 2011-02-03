@@ -49,36 +49,21 @@
 \pagestyle{fancyplain}
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
+\usepackage{tocloft}
+\renewcommand{\cftchapaftersnum}{\cftdot}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 \usepackage[clearempty]{titlesec}
 \usepackage[titletoc]{appendix}
 
 \makeatletter
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill\kern\z@}
-
-\renewcommand*\l@chapter[2]{%
-    \ifnum \c@tocdepth >\m@ne
-        \addpenalty{-\@highpenalty}%
-        \vskip 1.0em \@plus\p@
-        \setlength\@tempdima{1.5em}%
-        \begingroup
-            \parindent \z@ \rightskip \@pnumwidth
-            \parfillskip -\@pnumwidth
-            \leavevmode \bfseries
-            \advance\leftskip\@tempdima
-            \hskip -\leftskip
-            #1\nobreak\normalfont\leaders\hbox{$\m@th
-                \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
-                mu$}\hfill\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
-            \penalty\@highpenalty
-        \endgroup
-    \fi
-}
 \makeatother
 
 \newcommand{\parbreak}{\bigskip}
 \newcommand{\fancyparbreak}{\bigskip\centerline{$\ast\quad\ast\quad\ast$}\bigskip}
 
 \begin{document}
+\pagenumbering{alph}
 \input{pages/cover}
 
 \frontmatter
@@ -87,55 +72,66 @@
 \thispagestyle{empty}
 \input{pages/copyright}
 
+\cleardoublepage
 \raggedcolumns
 \tableofcontents
 \flushcolumns
 
+\chapter{Prólogo}
+\cftchapterprecis{por Jose A. Carrasco}\par
+\input{chapters/000-prologo}
+
 \mainmatter
-\addtocontents{toc}{\protect\begin{multicols}{2}}
-\chapter{El fin}\label{chapter:el_fin}
+\addtocontents{toc}{\protect\vspace{\cftbeforechapskip}\protect\begin{multicols}{2}}
+\chapter{El fin}
 \input{chapters/001-el_fin}
 
-\chapter{El principio}\label{chapter:el_principio}
+\chapter{El principio}
 \input{chapters/002-el_principio}
 
-\chapter{Aprendizaje}\label{chapter:aprendizaje}
+\chapter{Aprendizaje}
 \input{chapters/003-aprendizaje}
 
-\chapter{Surgimiento}\label{chapter:surgimiento}
+\chapter{Surgimiento}
 \input{chapters/004-surgimiento}
 
-\chapter{Confrontación}\label{chapter:confrontacion}
+\chapter{Confrontación}
 \input{chapters/005-confrontacion}
 
-\chapter{Regreso}\label{chapter:regreso}
+\chapter{Regreso}
 \input{chapters/006-regreso}
 
-\chapter{Conflicto}\label{chapter:conflicto}
+\chapter{Conflicto}
 \input{chapters/007-conflicto}
 
-\chapter{Presión}\label{chapter:presion}
+\chapter{Presión}
 \input{chapters/008-presion}
 
-\chapter{Clandestinidad}\label{chapter:clandestinidad}
+\chapter{Clandestinidad}
 \input{chapters/009-clandestinidad}
 
-\chapter{Depredador}\label{chapter:depredador}
+\chapter{Depredador}
 \input{chapters/010-depredador}
 
-\chapter{Persecución}\label{chapter:persecucion}
+\chapter{Persecución}
 \input{chapters/011-persecucion}
 
-\chapter{Diagnóstico}\label{chapter:diagnostico}
+\chapter{Diagnóstico}
 \input{chapters/012-diagnostico}
+\addtocontents{toc}{\protect\end{multicols}}
 
 \begin{appendices}
 \renewcommand{\thechapter}{\arabic{chapter}}
-\chapter{Crossover}\label{appendix:crossover}
+\chapter{Crossover}
+\cftchapterprecistoc{Porque no siempre todo lo importante sucede en el mismo lugar, y no siempre los protagonistas están en el foco de los hechos principales. Hay otras historias, a veces ajenas, que saltan a la primera línea de los acontecimientos, y resultan ser tan cruciales como aquellas en las que uno había enfocado su atención en un primer vistazo\dots}
 \input{chapters/anual-001-crossover}
 \end{appendices}
 
-\chapter{Infiltración (Fase~1)}\label{chapter:infiltracion-fase_1}
+\addtocontents{toc}{\protect\vspace{\cftbeforechapskip}\protect\begin{multicols}{2}}
+\chapter{Infiltración (Fase~1)}
 \input{chapters/013-infiltracion_(fase_1)}
+
+\chapter{Eliminación (Fase~2)}
+\input{chapters/014-eliminacion_(fase_2)}
 \addtocontents{toc}{\protect\end{multicols}}
 \end{document}
