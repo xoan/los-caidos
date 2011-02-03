@@ -25,6 +25,8 @@ Dependencies
 * geometry
 * crop
 * fancyhdr
+* multicol
+* tocloft
 * titlesec
 * appendix
 
