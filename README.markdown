@@ -15,20 +15,20 @@ Original text
 Dependencies
 ------------
 
-* babel
-* mathdesign
-* textcomp
-* graphicx
-* microtype
-* hyperref, hyperxmp
-* eso-pic
-* geometry
-* crop
-* fancyhdr
-* multicol
-* tocloft
-* titlesec
-* appendix
+* [babel](http://ctan.org/pkg/babel)
+* [mathdesign](http://ctan.org/pkg/mathdesign)
+* [textcomp](http://ctan.org/pkg/texcomp)
+* [graphicx](http://ctan.org/pkg/graphicx)
+* [microtype](http://ctan.org/pkg/microtype)
+* [hyperref](http://ctan.org/pkg/hyperref), [hyperxmp](http://ctan.org/pkg/hyperxmp)
+* [eso-pic](http://ctan.org/pkg/eso-pic)
+* [geometry](http://ctan.org/pkg/geometry)
+* [crop](http://ctan.org/pkg/crop)
+* [fancyhdr](http://ctan.org/pkg/fancyhdr)
+* [multicol](http://ctan.org/pkg/multicol)
+* [tocloft](http://ctan.org/pkg/tocloft)
+* [titlesec](http://ctan.org/pkg/titlesec)
+* [appendix](http://ctan.org/pkg/appendix)
 
 Generating PDF Files
 --------------------
