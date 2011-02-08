@@ -31,8 +31,8 @@
 \hypersetup{
     pdftitle={\titlename. \ \subtitlename},
     pdfauthor={\authorname},
-    pdfcopyright={Copyright \copyright\ 2010-2011, \authorname\012%
-        Copyright \copyright\ 2011, de la edición, \editorname\012\012%
+    pdfcopyright={\copyright\ 2010-2011, \authorname\012%
+        \copyright\ 2011, de la edición, \editorname\012\012%
         Se otorga el permiso para copiar, publicar y/o distribuir libremente esta obra y/u obras derivadas de esta obra, ya sea total o parcialmente, por cualquier medio y con cualquier propósito sin ánimo de lucro, siempre y cuando esta nota se mantenga.
     },
     pdflicenseurl={http://creativecommons.org/licenses/by-nc-sa/3.0/es/},
@@ -70,10 +70,11 @@
 \input{pages/cover}
 
 \frontmatter
-\maketitle
-
+\hbox{}\newpage
 \thispagestyle{empty}
 \input{pages/copyright}
+
+\maketitle
 
 \cleardoublepage
 \raggedcolumns
@@ -85,7 +86,7 @@
 \input{chapters/000-prologo}
 
 \mainmatter
-\addtocontents{toc}{\protect\vspace{\cftbeforechapskip}\protect\begin{multicols}{2}}
+\addtocontents{toc}{\protect\vspace{0.5\cftbeforechapskip}\protect\begin{multicols}{2}}
 \chapter{El fin}
 \input{chapters/001-el_fin}
 
@@ -121,7 +122,7 @@
 
 \chapter{Diagnóstico}
 \input{chapters/012-diagnostico}
-\addtocontents{toc}{\protect\end{multicols}}
+\addtocontents{toc}{\protect\end{multicols}\protect\vspace{-0.5\cftbeforechapskip}}
 
 \begin{appendices}
 \renewcommand{\thechapter}{\arabic{chapter}}
@@ -130,7 +131,7 @@
 \input{chapters/anual-001-crossover}
 \end{appendices}
 
-\addtocontents{toc}{\protect\vspace{\cftbeforechapskip}\protect\begin{multicols}{2}}
+\addtocontents{toc}{\protect\vspace{0.5\cftbeforechapskip}\protect\begin{multicols}{2}}
 \chapter{Infiltración (Fase~1)}
 \input{chapters/013-infiltracion_(fase_1)}
 
@@ -166,7 +167,7 @@
 
 \chapter{}
 %\input{chapters/024-}
-\addtocontents{toc}{\protect\end{multicols}}
+\addtocontents{toc}{\protect\end{multicols}\protect\vspace{-0.5\cftbeforechapskip}}
 
 \begin{appendices}
 \renewcommand{\thechapter}{\arabic{chapter}}
