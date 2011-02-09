@@ -50,7 +50,7 @@
 \cfoot{}
 \pagestyle{fancy}
 \usepackage{multicol}
-\setlength{\columnsep}{0.75cm}
+\setlength{\columnsep}{1cm}
 \usepackage{tocloft}
 \renewcommand{\cftchapaftersnum}{\cftdot}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
@@ -132,16 +132,24 @@
 \end{appendices}
 
 \addtocontents{toc}{\protect\vspace{0.5\cftbeforechapskip}\protect\begin{multicols}{2}}
-\chapter{Infiltración (Fase~1)}
+\chapter{Infiltración}
+\cftchapterprecis{Fase 1}\par
+\addtocontents{toc}{\protect\vspace{-0.5\cftbeforechapskip}}
 \input{chapters/013-infiltracion_(fase_1)}
 
-\chapter{Eliminación (Fase~2)}
+\chapter{Eliminación}
+\cftchapterprecis{Fase 2}\par
+\addtocontents{toc}{\protect\vspace{-0.5\cftbeforechapskip}}
 \input{chapters/014-eliminacion_(fase_2)}
 
-\chapter{Ultimátum (Fase~3)}
+\chapter{Ultimátum}
+\cftchapterprecis{Fase 3}\par
+\addtocontents{toc}{\protect\vspace{-0.5\cftbeforechapskip}}
 \input{chapters/015-ultimatum_(fase_3)}
 
 \chapter{}
+\cftchapterprecis{Fase 4}\par
+\addtocontents{toc}{\protect\vspace{-0.5\cftbeforechapskip}}
 %\input{chapters/016-}
 
 \chapter{}
