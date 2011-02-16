@@ -27,20 +27,6 @@
 \usepackage{graphicx}
 \usepackage[activate={true,nocompatibility},final]{microtype}
 
-\usepackage{hyperref,hyperxmp}
-\hypersetup{
-    pdftitle={\titlename. \ \subtitlename},
-    pdfauthor={\authorname},
-    pdfcopyright={\copyright\ 2010-2011, \authorname\012%
-        \copyright\ 2011, de la edición, \editorname\012\012%
-        Se otorga el permiso para copiar, publicar y/o distribuir libremente esta obra y/u obras derivadas de esta obra, ya sea total o parcialmente, por cualquier medio y con cualquier propósito sin ánimo de lucro, siempre y cuando esta nota se mantenga.
-    },
-    pdflicenseurl={http://creativecommons.org/licenses/by-nc-sa/3.0/es/},
-    bookmarksnumbered={true},
-    %pdfborder={0 0 0}
-}
-\newcommand{\urlot}[1]{{\fontencoding{OT1}\selectfont\url{#1}}}
-
 \usepackage{eso-pic}
 \usepackage[top=1cm,bottom=1cm,outer=1.5cm,inner=2cm,includehead,includefoot]{geometry}
 \usepackage[a4,cam,center]{crop}
@@ -64,6 +50,18 @@
 
 \newcommand{\parbreak}{\bigskip}
 \newcommand{\fancyparbreak}{\bigskip\centerline{$\ast\quad\ast\quad\ast$}\bigskip}
+
+\usepackage{hyperref,hyperxmp}
+\hypersetup{
+    pdftitle={\titlename. \ \subtitlename},
+    pdfauthor={\authorname},
+    pdfcopyright={\copyright\ 2010-2011, \authorname\012%
+        \copyright\ 2011, de la edición, \editorname\012\012%
+        Se otorga el permiso para copiar, publicar y/o distribuir libremente esta obra y/u obras derivadas de esta obra, ya sea total o parcialmente, por cualquier medio y con cualquier propósito sin ánimo de lucro, siempre y cuando esta nota se mantenga.
+    },
+    pdflicenseurl={http://creativecommons.org/licenses/by-nc-sa/3.0/es/},
+    bookmarksnumbered={true}
+}
 
 \begin{document}
 \thispagestyle{empty}
