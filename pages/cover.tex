@@ -1,10 +1,12 @@
+\newlength{\titlelength}
+\settowidth{\titlelength}{\textbf{\fontsize{60}{72}\selectfont\titlename}}
 \AddToShipoutPicture*{\includegraphics[width=\paperwidth,height=\paperheight]{images/cover}}
 \begin{center}
     \color{white}\vspace*{\stretch{1}}
 
     \textbf{\fontsize{60}{72}\selectfont\titlename}\vspace{0.5\baselineskip}
 
-    \vhrulefill{3pt} \textbf{\Large\scshape{\subtitlename}} \vhrulefill{3pt}\vspace{2\baselineskip}
+    \makebox[\titlelength]{\vhrulefill{10pt} \textbf{\Large\scshape{\subtitlename}} \vhrulefill{10pt}}\vspace{2\baselineskip}
 
     \textbf{\huge\itshape\authorname}\vspace*{\stretch{1}}
 
