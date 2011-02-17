@@ -15,11 +15,8 @@ Original text
 Dependencies
 ------------
 
-* [inputenc](http://ctan.org/pkg/inputenc)
-* [fontenc](http://ctan.org/pkg/fontenc)
 * [libertine](http://ctan.org/pkg/libertine)
 * [marvosym](http://ctan.org/pkg/marvosym)
-* [textcomp](http://ctan.org/pkg/texcomp)
 * [babel](http://ctan.org/pkg/babel)
 * [graphicx](http://ctan.org/pkg/graphicx)
 * [microtype](http://ctan.org/pkg/microtype)
