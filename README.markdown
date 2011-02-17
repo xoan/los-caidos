@@ -15,12 +15,14 @@ Original text
 Dependencies
 ------------
 
-* [babel](http://ctan.org/pkg/babel)
-* [mathdesign](http://ctan.org/pkg/mathdesign)
+* [inputenc](http://ctan.org/pkg/inputenc)
+* [fontenc](http://ctan.org/pkg/fontenc)
+* [libertine](http://ctan.org/pkg/libertine)
+* [marvosym](http://ctan.org/pkg/marvosym)
 * [textcomp](http://ctan.org/pkg/texcomp)
+* [babel](http://ctan.org/pkg/babel)
 * [graphicx](http://ctan.org/pkg/graphicx)
 * [microtype](http://ctan.org/pkg/microtype)
-* [hyperref](http://ctan.org/pkg/hyperref), [hyperxmp](http://ctan.org/pkg/hyperxmp)
 * [eso-pic](http://ctan.org/pkg/eso-pic)
 * [geometry](http://ctan.org/pkg/geometry)
 * [crop](http://ctan.org/pkg/crop)
@@ -29,10 +31,10 @@ Dependencies
 * [tocloft](http://ctan.org/pkg/tocloft)
 * [titlesec](http://ctan.org/pkg/titlesec)
 * [appendix](http://ctan.org/pkg/appendix)
+* [hyperref](http://ctan.org/pkg/hyperref), [hyperxmp](http://ctan.org/pkg/hyperxmp)
 
 Generating PDF Files
 --------------------
 
-    $ getnonfreefonts garamond
     $ pdflatex magnus_dagon-los_caidos.tex
     $ pdflatex magnus_dagon-los_caidos.tex
