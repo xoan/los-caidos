@@ -16,6 +16,7 @@ Dependencies
 ------------
 
 * [libertine](http://ctan.org/pkg/libertine)
+* [ccicons](http://ctan.org/pkg/ccicons)
 * [marvosym](http://ctan.org/pkg/marvosym)
 * [babel](http://ctan.org/pkg/babel)
 * [graphicx](http://ctan.org/pkg/graphicx)
