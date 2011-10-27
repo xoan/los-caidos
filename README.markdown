@@ -34,5 +34,7 @@ Dependencies
 Generating PDF Files
 --------------------
 
-    $ pdflatex magnus_dagon-los_caidos.tex
-    $ pdflatex magnus_dagon-los_caidos.tex
+    $ pdflatex magnus_dagon-los_caidos-01.tex
+    $ pdflatex magnus_dagon-los_caidos-01.tex
+    $ pdflatex magnus_dagon-los_caidos-02.tex
+    $ pdflatex magnus_dagon-los_caidos-02.tex
