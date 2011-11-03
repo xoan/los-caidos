@@ -1,7 +1,7 @@
 (PDF LaTeX Edition of) Los Caídos, a book by Magnus Dagon
 =========================================================
 
-**Copyright &copy; 2010 Magnus Dagon**  
+**Copyright &copy; 2010---2011 Magnus Dagon**  
 **Copyright &copy; Edition 2011 Xoan Sampaiño**  
 **Copyright &copy; Artwork 2010 Pablo Vaquero**
 
