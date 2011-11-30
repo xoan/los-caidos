@@ -2,8 +2,7 @@
 =========================================================
 
 **Copyright &copy; 2010-2011 Magnus Dagon**  
-**Copyright &copy; Edition 2011 Xoan Sampaiño**  
-**Copyright &copy; Artwork 2010 Pablo Vaquero**
+**Copyright &copy; Edition 2011 Xoan Sampaiño**
 
 Permission is granted to copy, publish and/or distribute this work freely and/or derivative works of this work, in whole or in part, by any means and any nonprofit purpose, provided this notice is preserved.
 
@@ -23,7 +22,6 @@ Dependencies
 * [microtype](http://ctan.org/pkg/microtype)
 * [eso-pic](http://ctan.org/pkg/eso-pic)
 * [geometry](http://ctan.org/pkg/geometry)
-* [crop](http://ctan.org/pkg/crop)
 * [fancyhdr](http://ctan.org/pkg/fancyhdr)
 * [multicol](http://ctan.org/pkg/multicol)
 * [tocloft](http://ctan.org/pkg/tocloft)
@@ -34,7 +32,5 @@ Dependencies
 Generating PDF Files
 --------------------
 
-    $ pdflatex magnus_dagon-los_caidos-01.tex
-    $ pdflatex magnus_dagon-los_caidos-01.tex
-    $ pdflatex magnus_dagon-los_caidos-02.tex
-    $ pdflatex magnus_dagon-los_caidos-02.tex
+    $ pdflatex magnus_dagon-los_caidos.tex
+    $ pdflatex magnus_dagon-los_caidos.tex
