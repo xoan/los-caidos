@@ -34,6 +34,7 @@
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 \usepackage{tocloft}
+\tocloftpagestyle{empty}
 \renewcommand{\cftchapaftersnum}{\cftdot}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 \usepackage[clearempty]{titlesec}
@@ -197,7 +198,6 @@
 \addtocontents{toc}{\protect\end{multicols}\protect\vspace{-0.5\cftbeforechapskip}}
 
 \begin{appendices}
-\setcounter{chapter}{2}
 \renewcommand{\thechapter}{\arabic{chapter}}
 \chapter{Penitencia}
 \cftchapterprecistoc{No sólo importaba lo que había sucedido mucho tiempo atrás; también la nueva era traía consigo sentimientos que algunos pensaban que ya nunca volverían a experimentar.}
@@ -260,6 +260,6 @@
 
 \pagestyle{empty}
 \raggedcolumns
-\newpage\hbox{}\tableofcontents
+\tableofcontents
 \cleardoublepage
 \end{document}
