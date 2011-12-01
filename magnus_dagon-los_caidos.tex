@@ -30,7 +30,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \lhead[]{\fancyplain{}{\footnotesize\titlename}}
 \rhead[\fancyplain{}{\footnotesize\nouppercase\authorname}]{}
-\cfoot{\fancyplain{}{\thepage}}
+\lfoot[\fancyplain{}{\thepage}]{}
+\cfoot{}
+\rfoot[]{\fancyplain{\thepage}{\thepage}}
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 \usepackage{tocloft}
@@ -69,7 +71,7 @@
 \newpage\hbox{}\cleardoublepage
 
 \addtocontents{toc}{\protect\vspace{0.5\cftbeforechapskip}\protect\begin{multicols}{2}}
-\pagestyle{fancy}
+\pagestyle{fancyplain}
 \chapter{El fin}
 \input{chapters/001-el_fin}
 
