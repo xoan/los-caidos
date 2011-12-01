@@ -30,11 +30,30 @@
 \usepackage{fancyhdr}
 \setlength{\headheight}{14pt}
 \renewcommand{\headrulewidth}{0pt}
+
+%% Inner Header / Outer Footer
 \lhead[]{\fancyplain{}{\footnotesize\titlename}}
-\rhead[\fancyplain{}{\footnotesize\nouppercase\authorname}]{}
-\lfoot[\fancyplain{}{\thepage}]{}
+\rhead[\footnotesize\nouppercase\authorname]{}
+\lfoot[\thepage]{}
 \cfoot{}
-\rfoot[]{\fancyplain{\thepage}{\thepage}}
+\rfoot[]{\thepage}
+
+%% Outer Header / Outer Footer
+%\lhead[\footnotesize\nouppercase\authorname]{}
+%\rhead[]{\fancyplain{}{\footnotesize\titlename}}
+%\lfoot[\thepage]{}
+%\cfoot{}
+%\rfoot[]{\thepage}
+
+%% Only Header (except Chapter Page)
+%\lhead[\thepage]{\fancyplain{}{\footnotesize\titlename}}
+%\rhead[\footnotesize\nouppercase\authorname]{\fancyplain{}{\thepage}}
+%\cfoot{\fancyplain{\thepage}{}}
+
+%% Center Header and Footer
+%\chead[\footnotesize\nouppercase\authorname]{\fancyplain{}{\footnotesize\titlename}}
+%\cfoot{\thepage}
+
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 \usepackage{tocloft}
