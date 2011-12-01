@@ -2,5 +2,5 @@
 *.log
 *.out
 *.pdf
+!images/*.pdf
 *.toc
-images/*.xcf
