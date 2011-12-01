@@ -1,4 +1,4 @@
-\documentclass{book}
+\documentclass[11pt]{book}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -28,6 +28,7 @@
 \usepackage{eso-pic}
 \usepackage[paperwidth=15.5cm,paperheight=24cm,top=2cm,bottom=2cm,outer=2cm,inner=2.5cm]{geometry}
 \usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
 \renewcommand{\headrulewidth}{0pt}
 \lhead[]{\fancyplain{}{\footnotesize\titlename}}
 \rhead[\fancyplain{}{\footnotesize\nouppercase\authorname}]{}
@@ -71,7 +72,7 @@
 \input{pages/copyright}
 \newpage\hbox{}\cleardoublepage
 
-\addtocontents{toc}{\protect\vspace{0.5\cftbeforechapskip}\protect\begin{multicols}{2}}
+\addtocontents{toc}{\protect\begin{small}\protect\vspace{0.5\cftbeforechapskip}\protect\begin{multicols}{2}}
 \pagestyle{fancyplain}
 \chapter{El fin}
 \input{chapters/001-el_fin}
@@ -258,7 +259,7 @@
 
 \chapter{Asalto \emph{\mdseries(Parte 2)}}
 \input{chapters/050-asalto}
-\addtocontents{toc}{\protect\end{multicols}\protect\vspace{-0.5\cftbeforechapskip}}
+\addtocontents{toc}{\protect\end{multicols}\protect\vspace{-0.5\cftbeforechapskip}\protect\end{small}}
 \cleardoublepage
 
 \pagestyle{empty}
