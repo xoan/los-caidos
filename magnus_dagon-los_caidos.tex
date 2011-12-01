@@ -49,7 +49,7 @@
 \makeatother
 
 \newcommand{\parbreak}{\vspace{2\bigskipamount}}
-\newcommand{\fancyparbreak}{\vspace{1.5\bigskipamount}\centerline{\libertineGlyph{uniE007}$\ast$\libertineGlyph{uniE007}}\vspace{1.5\bigskipamount}}
+\newcommand{\fancyparbreak}{\vspace{1.5\bigskipamount}\centerline{\textbf{\libertineGlyph{uniE007}}}\vspace{1.5\bigskipamount}}
 
 \newcommand{\typo}[2]{#2}
 
@@ -260,7 +260,7 @@
 \chapter{Asalto \emph{\mdseries(Parte 2)}}
 \input{chapters/050-asalto}
 \addtocontents{toc}{\protect\end{multicols}\protect\end{small}}
-\cleardoublepage
+\newpage\hbox{}\thispagestyle{empty}\cleardoublepage
 
 \pagestyle{empty}
 \raggedcolumns
