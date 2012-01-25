@@ -46,7 +46,6 @@
 \usepackage{multicol}
 \setlength{\columnsep}{.6cm}
 \usepackage{tocloft}
-\tocloftpagestyle{empty}
 \renewcommand{\cftchapaftersnum}{\cftdot}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 \usepackage[clearempty]{titlesec}
@@ -82,17 +81,20 @@
 \maketitle
 \input{pages/copyright}
 
+\addtocontents{toc}{
+    \protect\begin{small}
+}
+\chapter*{Agradecimientos}
+\addcontentsline{toc}{chapter}{Agradecimientos}
+\pagestyle{fancyplain}
 \begin{small}
-    \chapter*{Agradecimientos}\thispagestyle{empty}
-    \input{pages/thanks}\thispagestyle{empty}
+    \input{pages/thanks}
 \end{small}
 
 \addtocontents{toc}{
-    \protect\begin{small}
-    \protect\vspace{4\cftbeforechapskip}
+    \protect\vspace{1.5\cftbeforechapskip}
     \protect\begin{multicols}{2}
 }
-\pagestyle{fancyplain}
 \chapter{El fin}
 \input{chapters/001-el_fin}
 
@@ -307,7 +309,8 @@
 \addtocontents{toc}{\protect\end{multicols}\protect\end{small}}
 \newpage\hbox{}\thispagestyle{empty}\cleardoublepage
 
-\pagestyle{empty}
+\lhead[]{}
+\rhead[]{}
 \raggedcolumns
 \tableofcontents
 \cleardoublepage
