@@ -15,10 +15,11 @@
 \newcommand{\authorname}{Magnus Dagon}
 
 \usepackage{graphicx}
+\usepackage{wrapfig}
 
 \title{
     \vspace*{\stretch{.7}}
-    \includegraphics{images/minicaido.pdf}\\
+    \includegraphics{images/minicaido}\\
     \medskip
     \textbf{\Huge\titlename}
     \setcounter{page}{3}
@@ -53,6 +54,12 @@
 \usepackage[clearempty]{titlesec}
 \usepackage[titletoc]{appendix}
 
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{.81\textwidth}
+\renewcommand{\textflush}{flushepinormal}
+\renewcommand{\epigraphsize}{\footnotesize}
+\setlength{\epigraphrule}{0pt}
+
 \newcommand{\parbreak}{\vspace{2\bigskipamount}}
 \newcommand{\fancyparbreak}{
     \vspace{1.5\bigskipamount}
@@ -82,6 +89,11 @@
 \hbox{}\cleardoublepage
 \maketitle
 \input{pages/copyright}
+
+\hbox{}\cleardoublepage
+\begin{small}
+    \input{pages/funding}
+\end{small}
 
 \addtocontents{toc}{
     \protect\begin{small}
@@ -309,11 +321,15 @@
 \chapter{Asalto \emph{\mdseries(Parte 2)}}
 \input{chapters/050-asalto}
 \addtocontents{toc}{\protect\end{multicols}\protect\end{small}}
-\newpage\hbox{}\thispagestyle{empty}\cleardoublepage
 
 \lhead[]{}
 \rhead[]{}
 \raggedcolumns
 \tableofcontents
 \cleardoublepage
+
+\pagestyle{empty}
+\begin{small}
+    \input{pages/biography}
+\end{small}
 \end{document}
