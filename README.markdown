@@ -2,7 +2,7 @@
 =========================================================
 
 **Copyright &copy; 2010-2011 Magnus Dagon**  
-**Copyright &copy; Edition 2011 Xoan Sampaiño**
+**Copyright &copy; Edition 2012 Xoan Sampaiño**
 
 Permission is granted to copy, publish and/or distribute this work freely and/or derivative works of this work, in whole or in part, by any means and any nonprofit purpose, provided this notice is preserved.
 
@@ -15,12 +15,9 @@ Dependencies
 ------------
 
 * [libertine](http://ctan.org/pkg/libertine)
-* [ccicons](http://ctan.org/pkg/ccicons)
-* [marvosym](http://ctan.org/pkg/marvosym)
 * [babel](http://ctan.org/pkg/babel)
 * [graphicx](http://ctan.org/pkg/graphicx)
 * [microtype](http://ctan.org/pkg/microtype)
-* [eso-pic](http://ctan.org/pkg/eso-pic)
 * [geometry](http://ctan.org/pkg/geometry)
 * [fancyhdr](http://ctan.org/pkg/fancyhdr)
 * [multicol](http://ctan.org/pkg/multicol)
