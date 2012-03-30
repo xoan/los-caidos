@@ -91,24 +91,39 @@
 \input{pages/copyright}
 
 \hbox{}\cleardoublepage
-\begin{small}
-    \input{pages/funding}
-\end{small}
 
 \addtocontents{toc}{
     \protect\begin{small}
 }
+
 \chapter*{Agradecimientos}
+\thispagestyle{empty}
 \addcontentsline{toc}{chapter}{Agradecimientos}
-\pagestyle{fancyplain}
 \begin{small}
     \input{pages/thanks}
 \end{small}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\section*{Microfinanciación\footnote{\url{http://www.lanzanos.com/proyectos/caidos/}}}
+\thispagestyle{empty}
+\begin{small}
+    \input{pages/funding}
+\end{small}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\newpage\thispagestyle{empty}
+\vspace*{\stretch{1}}
+\begin{center}
+    \includegraphics{images/minicaido}
+\end{center}
+\vspace*{\stretch{1}}
 
 \addtocontents{toc}{
     \protect\vspace{1.5\cftbeforechapskip}
     \protect\begin{multicols}{2}
 }
+
+\pagestyle{fancyplain}
 \chapter{El fin}
 \input{chapters/001-el_fin}
 
@@ -321,15 +336,20 @@
 \chapter{Asalto \emph{\mdseries(Parte 2)}}
 \input{chapters/050-asalto}
 \addtocontents{toc}{\protect\end{multicols}\protect\end{small}}
+\newpage\hbox{}\thispagestyle{empty}
+\newpage\thispagestyle{empty}
+\vspace*{\stretch{1}}
+\begin{center}
+    \includegraphics{images/minicaido}
+\end{center}
+\vspace*{\stretch{1}}\cleardoublepage
 
 \lhead[]{}
 \rhead[]{}
 \raggedcolumns
 \tableofcontents
-\cleardoublepage
+\hbox{}\cleardoublepage
 
 \pagestyle{empty}
-\begin{small}
-    \input{pages/biography}
-\end{small}
+\input{pages/biography}
 \end{document}
