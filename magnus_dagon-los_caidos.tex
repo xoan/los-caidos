@@ -104,12 +104,11 @@
 \end{small}
 
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
-\section*{Microfinanciación\footnote{\url{http://www.lanzanos.com/proyectos/caidos/}}}
+\section*{Microfinanciación\footnote{\scriptsize\url{http://www.lanzanos.com/proyectos/caidos/}}}
 \thispagestyle{empty}
 \begin{small}
     \input{pages/funding}
 \end{small}
-\renewcommand{\thefootnote}{\arabic{footnote}}
 
 \newpage\hbox{}\thispagestyle{empty}\cleardoublepage
 
@@ -339,6 +338,7 @@
 \tableofcontents
 \hbox{}\cleardoublepage
 
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \pagestyle{empty}
 \input{pages/biography}
 \end{document}
