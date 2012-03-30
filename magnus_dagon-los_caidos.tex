@@ -111,12 +111,7 @@
 \end{small}
 \renewcommand{\thefootnote}{\arabic{footnote}}
 
-\newpage\thispagestyle{empty}
-\vspace*{\stretch{1}}
-\begin{center}
-    \includegraphics{images/minicaido}
-\end{center}
-\vspace*{\stretch{1}}
+\newpage\hbox{}\thispagestyle{empty}\cleardoublepage
 
 \addtocontents{toc}{
     \protect\vspace{1.5\cftbeforechapskip}
@@ -336,13 +331,7 @@
 \chapter{Asalto \emph{\mdseries(Parte 2)}}
 \input{chapters/050-asalto}
 \addtocontents{toc}{\protect\end{multicols}\protect\end{small}}
-\newpage\hbox{}\thispagestyle{empty}
-\newpage\thispagestyle{empty}
-\vspace*{\stretch{1}}
-\begin{center}
-    \includegraphics{images/minicaido}
-\end{center}
-\vspace*{\stretch{1}}\cleardoublepage
+\newpage\hbox{}\thispagestyle{empty}\cleardoublepage
 
 \lhead[]{}
 \rhead[]{}
